@@ -1,0 +1,46 @@
+
+[23:08:36] [Server thread/INFO]: Starting integrated minecraft server version 1.12.1
+[23:08:36] [Server thread/INFO]: Generating keypair
+[23:08:36] [Server thread/INFO] [FML]: Injecting existing registry data into this server instance
+[23:08:36] [Server thread/INFO] [FML]: Applying holder lookups
+[23:08:36] [Server thread/INFO] [FML]: Holder lookups applied
+[23:08:37] [Server thread/INFO] [FML]: Loading dimension 0 (New World) (net.minecraft.server.integrated.IntegratedServer@538982ac)
+[23:08:37] [Server thread/INFO]: Loaded 488 advancements
+[23:08:37] [Server thread/INFO] [FML]: Loading dimension 1 (New World) (net.minecraft.server.integrated.IntegratedServer@538982ac)
+[23:08:37] [Server thread/INFO] [FML]: Loading dimension -1 (New World) (net.minecraft.server.integrated.IntegratedServer@538982ac)
+[23:08:37] [Server thread/INFO]: Preparing start region for level 0
+[23:08:38] [Server thread/INFO]: Preparing spawn area: 72%
+[23:08:38] [Server thread/INFO]: Changing view distance to 12, from 10
+[23:08:40] [Netty Local Client IO #0/INFO] [FML]: Server protocol version 2
+[23:08:40] [Netty Server IO #1/INFO] [FML]: Client protocol version 2
+[23:08:40] [Netty Server IO #1/INFO] [FML]: Client attempting to join with 5 mods : minecraft@1.12.1,FML@8.0.99.99,forge@14.22.1.2478,tm@1.0,mcp@9.19
+[23:08:40] [Netty Local Client IO #0/INFO] [FML]: [Netty Local Client IO #0] Client side modded connection established
+[23:08:40] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[23:08:40] [Server thread/INFO]: Player184[local:E:556b8d15] logged in with entity id 256 at (-96.48664006877007, 74.37429331309657, 263.3361631234323)
+[23:08:40] [Server thread/INFO]: Player184 joined the game
+[23:08:40] [Server thread/INFO]: Saving and pausing game...
+[23:08:40] [Server thread/INFO]: Saving chunks for level 'New World'/overworld
+[23:08:41] [Server thread/INFO]: Saving chunks for level 'New World'/the_nether
+[23:08:41] [Server thread/INFO]: Saving chunks for level 'New World'/the_end
+[23:08:41] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@3f2ec68e[id=6c583257-c0f3-36ee-8f7b-120dd0b255f7,name=Player184,properties={},legacy=false]
+com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:79) ~[YggdrasilAuthenticationService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:180) [YggdrasilMinecraftSessionService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:60) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:57) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3716) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2424) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4154) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4158) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:5153) [guava-21.0.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:170) [YggdrasilMinecraftSessionService.class:?]
+	at net.minecraft.client.Minecraft.getProfileProperties(Minecraft.java:3170) [Minecraft.class:?]
+	at net.minecraft.client.resources.SkinManager$3.run(SkinManager.java:138) [SkinManager$3.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:1.8.0_172]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [?:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_172]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_172]

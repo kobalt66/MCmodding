@@ -1,0 +1,6 @@
+{
+   "parent": "item/generated",
+   "textures": {
+       "layer0": "Desktop/MCmodding/TestMod2/src/main/resources/assets.tm/textures/ingot_copper"
+   }
+}
